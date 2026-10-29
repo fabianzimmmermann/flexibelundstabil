@@ -17,20 +17,20 @@
     { "value": "46189", "label_de": "Plays auf Rack City", "label_en": "plays on Rack City" },
     { "value": "1904", "label_de": "Follower auf SoundCloud", "label_en": "SoundCloud followers" },
     { "value": "26", "label_de": "Tracks & Sets", "label_en": "tracks & sets" },
-    { "value": "∞", "label_de": "BPM-Energie", "label_en": "bpm energy" }
+    { "value": "4", "label_de": "Labels", "label_en": "labels" }
   ],
   "about": {
     "image": "images/about.jpg",
-    "lead_de": "flexibel&stabil sind ein DJ- und Producer-Duo, das Bounce, Trance und Hard Groove zu etwas verbiegt, bei dem niemand stillstehen kann.",
-    "lead_en": "flexibel&stabil are a DJ / producer duo bending bounce, trance and hard groove into something you can't stand still to.",
-    "text_de": "Von Turbobounce-Flips von Hip-Hop-Klassikern wie Rack City und Hi Bich bis zu Edits auf Galactic Harmony, Lowkey Stars und Disko Rapid – und dazwischen jede Menge verschwitzte Bouncy-Dolphin-Trance-Sessions.\n\nFlexibel beim Genre. Stabil bei der Energie.",
-    "text_en": "From turbobounce flips of hip-hop classics like Rack City and Hi Bich to edits released on Galactic Harmony, Lowkey Stars and Disko Rapid — and plenty of sweaty, bouncy-dolphin trance sessions in between.\n\nFlexible on the genre. Stable on the energy."
+    "lead_de": "Wir sind flexibel&stabil, zwei DJs und Producer. Wir spielen Bounce, Trance und Hard Groove.",
+    "lead_en": "We're flexibel&stabil, two DJs and producers. We play bounce, trance and hard groove.",
+    "text_de": "Wir machen eigene Tracks, Edits und Turbobounce-Mixe von Hip-Hop-Songs wie Rack City und Hi Bich. Unsere Edits sind bei Galactic Harmony, Lowkey Stars, Sachsentrance und Disko Rapid erschienen.\n\nAufgelegt haben wir bisher vor allem in Cafés und kleinen Clubs, zum Beispiel im Café Schröder. Die Mitschnitte findet ihr weiter oben bei den Live-Sets.",
+    "text_en": "We make our own tracks, edits and turbobounce mixes of hip-hop songs like Rack City and Hi Bich. Our edits have come out on Galactic Harmony, Lowkey Stars, Sachsentrance and Disko Rapid.\n\nSo far we've mostly played cafés and small clubs, like Café Schröder. You'll find the recordings further up under Live Sets."
   },
   "booking": {
-    "text_de": "Clubnacht, Festival oder Geburtstag im Keller – schreib uns einfach eine DM.",
-    "text_en": "Club night, festival, birthday in a basement — slide into our DMs.",
-    "button_de": "DM auf Instagram",
-    "button_en": "DM us on Instagram",
+    "text_de": "Club, Festival oder Kellerparty? Schreib uns auf Instagram.",
+    "text_en": "Club, festival or basement party? Message us on Instagram.",
+    "button_de": "Nachricht auf Instagram",
+    "button_en": "Message us on Instagram",
     "link": "https://t.ly/NnGd2"
   },
   "links": {
