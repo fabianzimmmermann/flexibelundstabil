@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "image": "images/hero.jpg",
+    "genres": "Bounce / Trance / Turbobounce",
+    "release_title": "ready",
+    "release_label": "Lowkey Stars",
+    "release_url": "https://soundcloud.com/lowkeystars/flexibel-stabil-ready",
+    "ticker": [
+      "READY — OUT NOW",
+      "BANDIDO",
+      "RACK CITY (TURBOBOUNCE MIX)",
+      "HI BICH (TURBOBOUNCE MIX)",
+      "9K (FLEXIBELUNDSTABIL EDIT)"
+    ]
+  },
+  "stats": [
+    { "value": "46189", "label_de": "Plays auf Rack City", "label_en": "plays on Rack City" },
+    { "value": "1904", "label_de": "Follower auf SoundCloud", "label_en": "SoundCloud followers" },
+    { "value": "26", "label_de": "Tracks & Sets", "label_en": "tracks & sets" },
+    { "value": "∞", "label_de": "BPM-Energie", "label_en": "bpm energy" }
+  ],
+  "about": {
+    "image": "images/about.jpg",
+    "lead_de": "flexibel&stabil sind ein DJ- und Producer-Duo, das Bounce, Trance und Hard Groove zu etwas verbiegt, bei dem niemand stillstehen kann.",
+    "lead_en": "flexibel&stabil are a DJ / producer duo bending bounce, trance and hard groove into something you can't stand still to.",
+    "text_de": "Von Turbobounce-Flips von Hip-Hop-Klassikern wie Rack City und Hi Bich bis zu Edits auf Galactic Harmony, Lowkey Stars und Disko Rapid – und dazwischen jede Menge verschwitzte Bouncy-Dolphin-Trance-Sessions.\n\nFlexibel beim Genre. Stabil bei der Energie.",
+    "text_en": "From turbobounce flips of hip-hop classics like Rack City and Hi Bich to edits released on Galactic Harmony, Lowkey Stars and Disko Rapid — and plenty of sweaty, bouncy-dolphin trance sessions in between.\n\nFlexible on the genre. Stable on the energy."
+  },
+  "booking": {
+    "text_de": "Clubnacht, Festival oder Geburtstag im Keller – schreib uns einfach eine DM.",
+    "text_en": "Club night, festival, birthday in a basement — slide into our DMs.",
+    "button_de": "DM auf Instagram",
+    "button_en": "DM us on Instagram",
+    "link": "https://t.ly/NnGd2"
+  },
+  "links": {
+    "soundcloud": "https://soundcloud.com/user-986419618",
+    "spotify": "https://artist.sptfy.com/OOsW",
+    "youtube": "https://youtube.com/@flexibelundstabil",
+    "instagram": "https://t.ly/NnGd2"
+  }
+}

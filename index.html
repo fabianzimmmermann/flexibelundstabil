@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://w.soundcloud.com; frame-src https://w.soundcloud.com; img-src 'self' data: https://*.sndcdn.com; connect-src 'self' https://soundcloud.com; style-src 'self'; font-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<!-- Preview phase: keep search engines out. Remove this line at launch. -->
+<meta name="robots" content="noindex, nofollow">
+<title>flexibel&amp;stabil — Bounce / Trance</title>
+<meta name="description" content="flexibel&stabil — Bounce / Trance DJ-Duo. Neue Musik, Edits, Live-Sets und Booking.">
+<link rel="preload" href="fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#top" class="logo">flexibel<span>&amp;</span>stabil</a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#music" data-i18n="nav_music"></a>
+    <a href="#releases" data-i18n="nav_releases"></a>
+    <a href="#sets" data-i18n="nav_sets"></a>
+    <a href="#shows" data-i18n="nav_shows"></a>
+    <a href="#about" data-i18n="nav_about"></a>
+    <a href="#booking" data-i18n="nav_booking"></a>
+  </nav>
+  <div class="lang-switch" role="group" aria-label="Sprache / Language">
+    <button data-lang="de">DE</button><button data-lang="en">EN</button>
+  </div>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-shade"></div>
+  <div class="hero-content">
+    <p class="eyebrow" id="heroGenres"></p>
+    <h1 class="hero-title">
+      <span>flexibel</span>
+      <span class="amp">&amp;</span>
+      <span>stabil</span>
+    </h1>
+    <div class="hero-release">
+      <span class="tag">Out now</span>
+      <strong id="heroRelease"></strong>
+      <span class="muted" id="heroLabel"></span>
+    </div>
+    <div class="hero-cta">
+      <button class="btn btn-primary" id="heroPlay">▶ <span data-i18n="listen_now"></span></button>
+      <a class="btn btn-ghost" href="#booking" data-i18n="book_us"></a>
+    </div>
+  </div>
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" id="ticker"></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats" id="stats"></section>
+
+<!-- MUSIC -->
+<section class="section" id="music">
+  <div class="section-head">
+    <h2 data-i18n="music_title"></h2>
+    <a class="link" id="allTracks" target="_blank" rel="noopener" data-i18n="all_tracks"></a>
+  </div>
+  <div class="grid" id="musicGrid"></div>
+</section>
+
+<!-- RELEASES -->
+<section class="section alt" id="releases">
+  <div class="section-head">
+    <h2 data-i18n="releases_title"></h2>
+    <a class="link" id="releasesPlaylist" target="_blank" rel="noopener" data-i18n="full_playlist"></a>
+  </div>
+  <ol class="tracklist" id="releaseList"></ol>
+</section>
+
+<!-- SETS -->
+<section class="section" id="sets">
+  <div class="section-head">
+    <h2 data-i18n="sets_title"></h2>
+    <p class="muted" data-i18n="sets_sub"></p>
+  </div>
+  <div class="grid grid-small" id="setGrid"></div>
+</section>
+
+<!-- SHOWS -->
+<section class="section alt" id="shows">
+  <div class="section-head">
+    <h2 data-i18n="shows_title"></h2>
+    <p class="muted" data-i18n="shows_sub"></p>
+  </div>
+  <div class="shows" id="showList"></div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+  <div class="about-img"><img id="aboutImg" alt="flexibel&amp;stabil" loading="lazy"></div>
+  <div class="about-text">
+    <h2 data-i18n="about_title"></h2>
+    <p class="lead" id="aboutLead"></p>
+    <div id="aboutText"></div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking" id="booking">
+  <h2>Booking</h2>
+  <p id="bookingText"></p>
+  <a class="btn btn-primary btn-big" id="bookingBtn" target="_blank" rel="noopener"></a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="socials" id="socials"></div>
+  <div class="footer-legal">
+    <a href="legal.html#impressum" data-i18n="impressum"></a>
+    <a href="legal.html#privacy" data-i18n="privacy"></a>
+    <button class="linklike" id="revokeConsent" hidden data-i18n="revoke"></button>
+    <span class="muted">© <span id="year"></span> flexibel&amp;stabil</span>
+  </div>
+</footer>
+
+<!-- PLAYER -->
+<div class="player" id="player" hidden>
+  <img id="pArt" alt="">
+  <div class="p-info">
+    <strong id="pTitle">—</strong>
+    <span id="pArtist" class="muted">flexibel&amp;stabil</span>
+  </div>
+  <button class="p-btn" id="pToggle" aria-label="Play/Pause">❚❚</button>
+  <div class="p-bar" id="pBar"><div id="pProgress"></div></div>
+  <span class="p-time muted" id="pTime">0:00</span>
+  <a class="p-sc" id="pLink" target="_blank" rel="noopener" title="SoundCloud">SC ↗</a>
+</div>
+
+<!-- SOUNDCLOUD CONSENT -->
+<dialog class="consent" id="consent">
+  <h3 data-i18n="consent_title"></h3>
+  <p data-i18n="consent_text"></p>
+  <div class="consent-actions">
+    <button class="btn btn-primary" id="consentYes" data-i18n="consent_yes"></button>
+    <a class="btn btn-ghost" id="consentOpen" target="_blank" rel="noopener" data-i18n="consent_open"></a>
+    <button class="linklike" id="consentNo" data-i18n="consent_no"></button>
+  </div>
+  <p class="consent-small"><a href="legal.html#privacy" data-i18n="privacy"></a></p>
+</dialog>
+
+<script src="main.js"></script>
+</body>
+</html>

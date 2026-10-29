@@ -1,0 +1,31 @@
+{
+  "all_tracks_url": "https://soundcloud.com/user-986419618/tracks",
+  "releases_playlist_url": "https://soundcloud.com/user-986419618/sets/og-keemo-tom-hengst-flexibel",
+  "music": [
+    { "title": "ready", "url": "https://soundcloud.com/lowkeystars/flexibel-stabil-ready", "cover": "images/cover-ready.jpg", "note": "Lowkey Stars · 2026", "tag": "NEW" },
+    { "title": "Bandido", "url": "https://soundcloud.com/user-986419618/bandido", "cover": "images/cover-bandido.jpg", "note": "Original · 2026", "tag": "" },
+    { "title": "Bhad Bhabie – Hi Bich (turbobounce mix)", "url": "https://soundcloud.com/user-986419618/bhad-bhabie-hi-bitch", "cover": "images/cover-hi-bich.jpg", "note": "2026", "tag": "FREE DL" },
+    { "title": "Tyga – Rack City (turbobounce mix)", "url": "https://soundcloud.com/user-986419618/tyga-rack-city-turbobounce-mix", "cover": "images/cover-rack-city.jpg", "note": "46K plays · 2025", "tag": "FREE DL" },
+    { "title": "bro is a real groover", "url": "https://soundcloud.com/user-986419618/bro-is-a-real-groover-final", "cover": "images/cover-groover.jpg", "note": "Original · 2025", "tag": "" },
+    { "title": "Hit 'em with dat funk", "url": "https://soundcloud.com/user-986419618/hit-em-with-dat-funk-1", "cover": "images/cover-funk.jpg", "note": "Original · 2025", "tag": "" },
+    { "title": "Torn (edit)", "url": "https://soundcloud.com/user-986419618/torn", "cover": "images/cover-torn.jpg", "note": "2025", "tag": "FREE DL" },
+    { "title": "Indo Calling", "url": "https://soundcloud.com/user-986419618/indo-calling", "cover": "images/cover-indo-calling.jpg", "note": "2024", "tag": "FREE DL" }
+  ],
+  "releases": [
+    { "title": "OG Keemo & Tom Hengst – 9k (flexibelundstabil edit)", "artist": "flexibel&stabil", "label": "Galactic Harmony", "url": "https://soundcloud.com/galactic-harmony-records/og-keemo-tom-hengst-9k-flexibelundstabil-edit-ghmaster1-2", "cover": "images/cover-9k.jpg" },
+    { "title": "ready", "artist": "flexibel&stabil", "label": "Lowkey Stars", "url": "https://soundcloud.com/lowkeystars/flexibel-stabil-ready", "cover": "images/cover-ready.jpg" },
+    { "title": "The Naked And Famous – Punching In A Dream (flexibel&stabil edit)", "artist": "flexibel&stabil", "label": "Sachsentrance", "url": "https://soundcloud.com/sachsentrance/premiere-the-naked-and-famous", "cover": "images/cover-punching.jpg" },
+    { "title": "WORK IT RIGHT", "artist": "flexibel&stabil, lucavanlocke", "label": "Disko Rapid", "url": "https://soundcloud.com/disko-rapid/work-it-right-2", "cover": "images/cover-work-it-right.jpg" },
+    { "title": "BASS ALL NIGHT", "artist": "flexibel&stabil, lucavanlocke", "label": "Disko Rapid", "url": "https://soundcloud.com/disko-rapid/bass-all-night-1", "cover": "images/cover-bass-all-night.jpg" }
+  ],
+  "sets": [
+    { "title": "sweaty.trance.session", "url": "https://soundcloud.com/user-986419618/sweatytrancesession_0824cafeschroeder", "cover": "images/cover-sweaty-trance.jpg", "note": "Café Schröder · 08/24" },
+    { "title": "bouncy.dolphin.trance", "url": "https://soundcloud.com/user-986419618/bouncydolphintrance_0824cafeschroeder", "cover": "images/cover-dolphin-trance.jpg", "note": "Café Schröder · 08/24" },
+    { "title": "atzentrance", "url": "https://soundcloud.com/user-986419618/atzentrance-sundayscoffeeclub-2007", "cover": "images/cover-atzentrance.jpg", "note": "Sunday's Coffee Club · 07/24" },
+    { "title": "house session", "url": "https://soundcloud.com/user-986419618/house-session-sundays_coffeeclub-2007", "cover": "images/cover-house-session.jpg", "note": "Sunday's Coffee Club · 07/24" },
+    { "title": "Nacht der Kultur", "url": "https://soundcloud.com/user-986419618/nachtderkultursundays0806", "cover": "images/cover-nacht-der-kultur.jpg", "note": "Sundays · 06/24" },
+    { "title": "f&s hardbounce", "url": "https://soundcloud.com/user-986419618/fs-hardbounce-juzi-3105", "cover": "images/cover-hardbounce-juzi.jpg", "note": "Juzi · 05/24" },
+    { "title": "bouncy dolphin techno", "url": "https://soundcloud.com/user-986419618/bouncy-dolphin-techno-06042024-schroeders", "cover": "images/cover-dolphin-techno.jpg", "note": "Schröder's · 04/24" },
+    { "title": "birds 'n' beats", "url": "https://soundcloud.com/user-986419618/bird-n-beats_set_3009", "cover": "images/cover-birds-n-beats.jpg", "note": "Set · 09/23" }
+  ]
+}

@@ -1,0 +1,141 @@
+# Sveltia CMS configuration: defines the edit forms at /admin.
+# Change "repo" to the real GitHub repository (owner/name) before going live.
+backend:
+  name: github
+  repo: fabianzimmmermann/flexibelundstabil
+  branch: main
+  commit_messages:
+    update: "Inhalt geändert: {{slug}}"
+    uploadMedia: "Bild hochgeladen: {{path}}"
+    deleteMedia: "Bild gelöscht: {{path}}"
+
+media_folder: images
+public_folder: images
+
+collections:
+  - name: inhalte
+    label: Website-Inhalte
+    editor:
+      preview: false
+    files:
+      # ---------------------------------------------------------------- Termine
+      - name: shows
+        label: Termine / Shows
+        file: content/shows.json
+        fields:
+          - name: shows
+            label: Termine
+            label_singular: Termin
+            widget: list
+            summary: "{{fields.date}} – {{fields.venue}}"
+            hint: Vergangene Termine werden automatisch ausgegraut und als „Gespielt“ angezeigt.
+            fields:
+              - { name: date, label: Datum, widget: datetime, time_format: false, format: "YYYY-MM-DD" }
+              - { name: venue, label: Location / Event, widget: string }
+              - { name: city, label: Stadt, widget: string, required: false }
+              - { name: tickets, label: Ticket-Link, widget: string, required: false, hint: "Optional. Leer lassen, dann führt der Button zu Instagram." }
+
+      # ------------------------------------------------------------------ Musik
+      - name: music
+        label: Musik, Releases & Sets
+        file: content/music.json
+        fields:
+          - name: music
+            label: Neue Musik
+            label_singular: Track
+            widget: list
+            summary: "{{fields.title}}"
+            hint: Reihenfolge per Drag & Drop. Der oberste Track steht ganz vorne.
+            fields:
+              - { name: title, label: Titel, widget: string }
+              - { name: url, label: SoundCloud-Link, widget: string, hint: "Link zum Track, z. B. https://soundcloud.com/user-986419618/bandido" }
+              - { name: cover, label: Cover, widget: image, required: false, hint: "Optional. Ohne Cover wird es von SoundCloud geholt, sobald ein Besucher SoundCloud erlaubt hat." }
+              - { name: note, label: Kleiner Text darunter, widget: string, required: false, hint: "z. B. „Original · 2026“" }
+              - { name: tag, label: Label-Badge, widget: select, required: false, options: ["NEW", "FREE DL", "PREMIERE"] }
+          - name: releases
+            label: Label-Releases
+            label_singular: Release
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { name: title, label: Titel, widget: string }
+              - { name: artist, label: Artists, widget: string, default: "flexibel&stabil" }
+              - { name: label, label: Label, widget: string }
+              - { name: url, label: SoundCloud-Link, widget: string }
+              - { name: cover, label: Cover, widget: image, required: false }
+          - name: sets
+            label: Live-Sets
+            label_singular: Set
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { name: title, label: Titel, widget: string }
+              - { name: url, label: SoundCloud-Link, widget: string }
+              - { name: cover, label: Cover, widget: image, required: false }
+              - { name: note, label: Kleiner Text darunter, widget: string, required: false, hint: "z. B. „Café Schröder · 08/24“" }
+          - { name: all_tracks_url, label: "Link „Alle Tracks auf SoundCloud“", widget: string }
+          - { name: releases_playlist_url, label: "Link „Ganze Playlist“", widget: string }
+
+      # ------------------------------------------------------- Startseite & Texte
+      - name: site
+        label: Startseite, Über uns & Booking
+        file: content/site.json
+        fields:
+          - name: hero
+            label: Großes Bild oben
+            widget: object
+            fields:
+              - { name: image, label: Hintergrundbild, widget: image, hint: "Querformat, möglichst groß (mind. 2000 px breit)." }
+              - { name: genres, label: Genres (kleine Zeile über dem Namen), widget: string }
+              - { name: release_title, label: Aktuelles Release – Titel, widget: string }
+              - { name: release_label, label: Aktuelles Release – Label, widget: string, required: false }
+              - { name: release_url, label: Aktuelles Release – SoundCloud-Link, widget: string }
+              - name: ticker
+                label: Laufband
+                widget: list
+                field: { name: item, label: Text, widget: string }
+          - name: stats
+            label: Zahlen-Leiste
+            label_singular: Zahl
+            widget: list
+            summary: "{{fields.value}} – {{fields.label_de}}"
+            fields:
+              - { name: value, label: Zahl oder Zeichen, widget: string, hint: "Nur Ziffern (ohne Punkte) werden hochgezählt, z. B. 1904." }
+              - { name: label_de, label: Beschriftung (Deutsch), widget: string }
+              - { name: label_en, label: Beschriftung (English), widget: string }
+          - name: about
+            label: Über uns
+            widget: object
+            fields:
+              - { name: image, label: Foto, widget: image }
+              - { name: lead_de, label: Einleitung (Deutsch), widget: text }
+              - { name: lead_en, label: Einleitung (English), widget: text }
+              - { name: text_de, label: Text (Deutsch), widget: text, hint: "Leerzeile = neuer Absatz." }
+              - { name: text_en, label: Text (English), widget: text }
+          - name: booking
+            label: Booking
+            widget: object
+            fields:
+              - { name: text_de, label: Text (Deutsch), widget: string }
+              - { name: text_en, label: Text (English), widget: string }
+              - { name: button_de, label: Button (Deutsch), widget: string }
+              - { name: button_en, label: Button (English), widget: string }
+              - { name: link, label: Button-Link, widget: string }
+          - name: links
+            label: Social-Media-Links
+            widget: object
+            fields:
+              - { name: soundcloud, label: SoundCloud, widget: string, required: false }
+              - { name: spotify, label: Spotify, widget: string, required: false }
+              - { name: youtube, label: YouTube, widget: string, required: false }
+              - { name: instagram, label: Instagram, widget: string, required: false }
+
+      # ---------------------------------------------------------- Rechtliches
+      - name: legal
+        label: Impressum & Datenschutz
+        file: content/legal.json
+        fields:
+          - { name: impressum_de, label: Impressum (Deutsch), widget: text, hint: "„## “ am Zeilenanfang = Überschrift. Leerzeile = neuer Absatz." }
+          - { name: impressum_en, label: Legal notice (English), widget: text }
+          - { name: privacy_de, label: Datenschutzerklärung (Deutsch), widget: text }
+          - { name: privacy_en, label: Privacy policy (English), widget: text }
